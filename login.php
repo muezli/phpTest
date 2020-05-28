@@ -7,7 +7,7 @@
 	//Sima bejelntkeztetés, ha van users táblában tovább engedi egyébként visszadobja.
 	//Session változókban: bejelentkezett felhasználó neve és bejelentkezés dátuma
 	if($db = mysqli_connect('localhost','root','')){
-		$q = 'SELECT * FROM torontali.users WHERE users.name LIKE "'.$name.'" AND users.password LIKE "'.$pw.'";';
+		$q = 'SELECT * FROM raktar.users WHERE users.name LIKE "'.$name.'" AND users.password LIKE "'.$pw.'";';
 		if($res = $db->query($q)){
 			if($res->num_rows == 1){
 				$_SESSION['user'] = $name;

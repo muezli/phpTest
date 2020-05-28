@@ -74,7 +74,7 @@
 	$rendez = (isset($_POST['rendez'])) ? $_POST['rendez'] : 'orderheaders.ID';
 	$status = (isset($_POST['status']) && $_POST['status'] !== 'all') ? '"%'.$_POST['status'].'%"' : '"%"';
 	$desc = (isset($_POST['desc'])) ? $_POST['desc'] : '';
-	if($db = mysqli_connect('localhost','root','')){
+	if($db = mysqli_connect('localhost','root','','raktar')){
 		$q = 'SELECT orderheaders.ID AS ID, costumers.name AS name, orderheaders.date AS date, orderheaders.addr AS addr , orderheaders.status AS status
 			FROM orderheaders 
 			INNER JOIN costumers ON costumers.ID = orderheaders.customerID 

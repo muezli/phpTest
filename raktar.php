@@ -68,7 +68,7 @@
 	$weight = (isset($_POST['weight'])) ? '"%'.$_POST['weight'].'%"' :  '"%"' ;
 	$rendez = (isset($_POST['rendez'])) ? $_POST['rendez'] : 'ID';
 	$desc = (isset($_POST['desc'])) ? $_POST['desc'] : '';
-	if($db = mysqli_connect('localhost','root','')){
+	if($db = mysqli_connect('localhost','root','','raktar')){
 		$q = 'SELECT ID, name, quantity, location, weight FROM stock WHERE ID LIKE '.$ID.' AND name LIKE '.$name.' AND quantity LIKE '.$qty.' AND location LIKE '.$loc.' AND weight LIKE '.$weight.' ORDER BY '.$rendez.' '.$desc;
 		if ($res= $db->query($q)) {
 			while ($row = $res->fetch_assoc()) {
