@@ -7,6 +7,7 @@ MariaDB adatbázishoz csatlakozik.
 Jelszó tárolás nem megfelelő (egyszerűség kedvéért plaintext), WAMP szerverkonfiguráció karakterkódolást sokszor "eltöri".
 
 ***
+```
 Adatbázis felépítése:
 
 //AI: Auto Increment
@@ -80,5 +81,5 @@ raktar:
     name: varchar(32)
     user_name: varchar(16)
     password: varchar(32)
-
+```
 ***
