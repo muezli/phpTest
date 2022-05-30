@@ -1,4 +1,5 @@
 # phpTest
+Made for a school project. (Can't remember exactly on what)
 Adatbázis listázás és manipuláció PHP-val
 Szállítási listákat generál aktív státuszu megrendelésekből, raktárkészletet figyelmen kívül hagyva.
 
